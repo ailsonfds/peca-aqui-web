@@ -5,28 +5,43 @@ footer {
   padding: 30px 0;
 }
 
-.sitemap {
-  > h3 {
-    margin: 0;
+.form-contact {
+  text-align: left;
+}
+
+.contact-address {
+  display: table;
+  margin: 10px auto;
+  > .item-address {
+    display: table;
+    margin-bottom: 23px;
+
+    > p, > i {display: table-cell;}
+    > i {width: 50px;}
+    > p {width: 275px; text-align: left; font-size: 14px;}
   }
 }
 
-.sitemap-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.social {
+  display: block;
+  margin: 10px 0;
+  > a {
+    margin: 0 1em;
+    color: #fff;
+  }
+}
+
+.private-policy {
+  display: block;
+  font-size: 14px;
+  margin-top: 20px;
   
-  > .sitemap-list-item {
-    display: block;
-    margin: 15px 0;
+  > a {
+    text-decoration: none;  
+    color: #fff;
   }
-
-  > .sitemap-list-item > a {
-    color: white;
-  }  
 }
 
-.social > a {
-  margin: 0 1em;
-  color: #fff;
+@media only screen and (min-width: 768px) {
+
 }

@@ -1,6 +1,11 @@
 $color-text-default: #383838;
+$color-text-gray: #000000;
 
 %negative {
   background-color: $color-text-default;
   color: #fff;
+}
+
+%color-footer-title {
+  color: $color-text-gray;
 }

@@ -9,21 +9,37 @@ footer {
   text-align: center;
   padding: 30px 0; }
 
-.sitemap > h3 {
-  margin: 0; }
+.form-contact {
+  text-align: left; }
 
-.sitemap-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0; }
-  .sitemap-list > .sitemap-list-item {
-    display: block;
-    margin: 15px 0; }
-  .sitemap-list > .sitemap-list-item > a {
-    color: white; }
+.contact-address {
+  display: table;
+  margin: 10px auto; }
+  .contact-address > .item-address {
+    display: table;
+    margin-bottom: 23px; }
+    .contact-address > .item-address > p, .contact-address > .item-address > i {
+      display: table-cell; }
+    .contact-address > .item-address > i {
+      width: 50px; }
+    .contact-address > .item-address > p {
+      width: 275px;
+      text-align: left;
+      font-size: 14px; }
 
-.social > a {
-  margin: 0 1em;
-  color: #fff; }
+.social {
+  display: block;
+  margin: 10px 0; }
+  .social > a {
+    margin: 0 1em;
+    color: #fff; }
+
+.private-policy {
+  display: block;
+  font-size: 14px;
+  margin-top: 20px; }
+  .private-policy > a {
+    text-decoration: none;
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

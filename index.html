@@ -18,39 +18,53 @@
     <section></section>
     <section></section>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div class="sitemap"> 
-          <h3>Mapa do Site</h3>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item"><a href="#">Inicio</a></li>
-            <li class="sitemap-list-item"><a href="#">Sobre</a></li>
-            <li class="sitemap-list-item"><a href="#">Serviços</a></li>
-            <li class="sitemap-list-item"><a href="#">Contato</a></li>
-          </ul>
-        </div>
-  
-        <hr>
-  
-        <div class="contact">
-          <h3>Contato</h3>
-          <address> 
-            <p>Rua Fulano de Tal. Centro. Natal/RN</p>
-            <p>contato@peca-aqui.com</p>
-            <p>+55 84 5555-5555</p>
-          </address>
-  
-          <div class="social">
-            <h3>Siga-nos</h3>
-            <a href="#"><i class="fa fa-2x fa-facebook-official"></i></a>
-            <a href="#"><i class="fa fa-2x fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-2x fa-twitter"></i></a>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="contact">
+              <address class="contact-address"> 
+                <div class="item-address"><i class="fa fa-map-marker"></i><p>Rua Fulano de Tal. Centro. Natal/RN</p></div>
+                <div class="item-address"><i class="fa fa-envelope-o"></i><p>contato@peca-aqui.com</p></div>
+                <div class="item-address"><i class="fa fa-phone"></i><p>+55 (84) 98869-1684</p></div>
+              </address>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="form-contact">
+              <p>Contato</p>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="name" id="form-name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="mail" class="form-control" name="email" id="form-email" placeholder="email@exemplo.com"></input>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="about" id="form-about" placeholder="Assunto">
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control" name="message" id="form-message" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="social">
+              <a href="#"><i class="fa fa-2x fa-facebook-official"></i></a>
+              <a href="#"><i class="fa fa-2x fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-2x fa-twitter"></i></a>
+            </div>
+
+            <div class="private-policy"><a href="#">Politica de Privacidade</a></div>
           </div>
         </div>
       </div>
     </footer>
 
-    <div class="go-to"></div>
+    <div class="go-top"></div>
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
