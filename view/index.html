@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Peça Aqui</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+  </head>
+  <body>
+    <header></header>
+    <section></section>
+    <section></section>
+    <section></section>
+
+    <section class="how-work">
+      <h1>Como Funciona</h1><hr>
+      <div class="owl-carousel owl-theme carousel">
+        <div class="card">
+          <div class="card-cover">
+            <img src="static/img/icon-fork.png" alt="Imagem Carrosel">
+          </div>
+          <div class="card-content">
+            <h3>Otimize sua experiência</h3>
+            <p>Faça Seus Pedidos Com Facilidade</p>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-cover">
+            <img src="static/img/images.png" alt="Imagem Carrosel">
+          </div>
+          <div class="card-content">
+            <h3>Cardápio na sua Mão</h3>
+            <p>Tenha mais agilidade</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-cover">
+            <img src="static/img/icon-fork.png" alt="Imagem Carrosel">
+          </div>
+          <div class="card-content">
+            <h3>Leia o QRCode</h3>
+            <p>E tenha acesso ao cardapio do lugar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </section>
+    
+    <!-- Aqui vem a descrição dos membros da equipe
+      <section></section> -->
+    
+    <section class="register">
+      <h1>Junte-se a nós</h1>
+      <p>Faça parte da nossa iniciativa</p>
+      <a href="#" class="btn-register">Cadastre-se</a>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-8">
+            <div class="form-contact">
+              <form action="#" method="POST">
+                <p>Contato</p>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" id="form-name" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <input type="mail" class="form-control" name="email" id="form-email" placeholder="email@exemplo.com"></input>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="about" id="form-about" placeholder="Assunto">
+                      </div>
+                  </div>  
+                  <div class="col-xs-12 col-sm-12 col-md-8">
+                    <div class="form-group">
+                      <textarea class="form-control form-textarea" name="message" id="form-message" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="form-group">
+                      <button class="btn btn-default btn-form" type="submit">Enviar</button>
+                    </div>
+                  </div>  
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="contact">
+              <address class="contact-address"> 
+                <div class="item-address"><i class="fa fa-map-marker"></i><p>Rua Fulano de Tal. Centro. Natal/RN</p></div>
+                <div class="item-address"><i class="fa fa-envelope-o"></i><p>contato@peca-aqui.com</p></div>
+                <div class="item-address"><i class="fa fa-phone"></i><p>+55 (84) 98869-1684</p></div>
+              </address>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="social">
+              <a href="#"><i class="fa fa-2x fa-facebook-official"></i></a>
+              <a href="#"><i class="fa fa-2x fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-2x fa-twitter"></i></a>
+            </div>
+
+            <div class="private-policy"><a href="#">Politica de Privacidade</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="go-top"></div>
+
+    <!-- scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+                  nav:true
+              },
+              600:{
+                  items:2,
+                  nav:false
+              },
+              1000:{
+                  items:3,
+                  nav:true,
+                  loop:false
+              }
+          }
+      })
+    </script>
+  </body>
+</html>

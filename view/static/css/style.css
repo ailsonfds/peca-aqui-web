@@ -1,0 +1,131 @@
+footer {
+  background-color: #383838;
+  color: #fff; }
+
+body {
+  font-size: 16px;
+  color: #383838; }
+
+h1 {
+  font-size: 25px; }
+
+p {
+  font-size: 16px; }
+
+.register {
+  width: 100%;
+  height: 200px;
+  text-align: center; }
+  .register > * {
+    margin: 20px auto; }
+
+.how-work {
+  width: 100%;
+  height: 500px;
+  text-align: center; }
+  .how-work > hr {
+    margin-top: -5px;
+    width: 60%; }
+
+footer {
+  text-align: center;
+  padding: 30px 0; }
+
+.form-contact {
+  text-align: left; }
+
+.contact-address {
+  display: table;
+  margin: 10px auto; }
+  .contact-address > .item-address {
+    display: table;
+    margin-bottom: 23px; }
+    .contact-address > .item-address > p, .contact-address > .item-address > i {
+      display: table-cell; }
+    .contact-address > .item-address > i {
+      width: 50px; }
+    .contact-address > .item-address > p {
+      width: 275px;
+      text-align: left;
+      font-size: 14px; }
+
+.social {
+  display: block;
+  margin: 10px 0; }
+  .social > a {
+    margin: 0 1em;
+    color: #fff; }
+
+.private-policy {
+  display: block;
+  font-size: 14px;
+  margin-top: 20px; }
+  .private-policy > a {
+    text-decoration: none;
+    color: #fff; }
+
+.btn-form {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media only screen and (min-width: 768px) {
+  .btn-form {
+    float: left;
+    width: 30%; } }
+@media only screen and (min-width: 992 px) {
+  textarea.form-control {
+    min-height: 2em; }
+
+  .btn-form {
+    width: 20%; } }
+.btn-register, .btn-to-top {
+  background-color: #E51F00;
+  color: #fff;
+  border: none;
+  position: relative;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 1px 1px 2px #ccc; }
+
+.btn-register {
+  margin: 30px auto;
+  padding: 10px 24px;
+  transition: 0.5s;
+  background-color: #E51F00; }
+  .btn-register:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #b21800;
+    box-shadow: 5px 5px 5px #ccc;
+    transition: 0.5s; }
+
+.btn-to-top {
+  display: fixed; }
+
+.card {
+  width: auto;
+  height: auto;
+  margin: 10px 10px;
+  border: none;
+  box-shadow: 2px 2px 10px #ccc; }
+
+.card-cover {
+  width: 100%;
+  height: 60%;
+  padding: 15px 0; }
+  .card-cover > img {
+    max-width: 150px;
+    height: 150px;
+    margin: 0 auto; }
+
+.card-content {
+  width: 100%;
+  height: 40%; }
+  .card-content > * {
+    padding: 20px 0; }
+
+/*# sourceMappingURL=style.css.map */
