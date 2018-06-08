@@ -121,4 +121,40 @@ public class Establishment {
     public void setMenus(List<Menu> menus) {
         this.menus = menus;
     }
+    
+    public boolean addOrder(Order order){
+        return this.orders.add(order);
+    }
+    
+    public boolean removeOrder(Order order){
+        return this.orders.remove(order);
+    }
+    
+    public boolean replaceOrder(Order order){
+        if(this.orders.contains(order)){
+            if(!this.orders.remove(order)){
+                return false;
+            } else
+                return this.orders.add(order);
+        }
+        return this.orders.add(order);
+    }
+    
+    public boolean addMenu(Menu menu){
+        return this.menus.add(menu);
+    }
+    
+    public boolean removeMenu(Menu menu){
+        return this.menus.remove(menu);
+    }
+    
+    public boolean replaceMenu(Menu menu){
+        if(this.menus.contains(menu)){
+            if(!this.menus.remove(menu)){
+                return false;
+            } else
+                return this.menus.add(menu);
+        }
+        return this.menus.add(menu);
+    }
 }

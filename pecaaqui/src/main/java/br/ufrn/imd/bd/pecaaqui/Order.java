@@ -88,4 +88,21 @@ public class Order {
         this.dishes = dishes;
     }
     
+    public boolean addDish(Dish dish){
+        return this.dishes.add(dish);
+    }
+    
+    public boolean removeDish(Dish dish){
+        return this.dishes.remove(dish);
+    }
+    
+    public boolean replaceDish(Dish dish){
+        if(this.dishes.contains(dish)){
+            if(!this.dishes.remove(dish)){
+                return false;
+            } else
+                return this.dishes.add(dish);
+        }
+        return this.dishes.add(dish);
+    }
 }

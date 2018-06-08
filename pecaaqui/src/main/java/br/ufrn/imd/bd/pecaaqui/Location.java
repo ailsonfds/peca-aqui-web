@@ -73,4 +73,40 @@ public class Location {
         this.address = address;
     }
 
+    public boolean addItem(Item item){
+        return this.stock.add(item);
+    }
+    
+    public boolean removeItem(Item item){
+        return this.stock.remove(item);
+    }
+    
+    public boolean replaceItem(Item item){
+        if(this.stock.contains(item)){
+            if(!this.stock.remove(item)){
+                return false;
+            } else
+                return this.stock.add(item);
+        }
+        return this.stock.add(item);
+    }
+    
+    public boolean addTabble(Tabble tabble){
+        return this.tabbles.add(tabble);
+    }
+    
+    public boolean removeTabble(Tabble tabble){
+        return this.tabbles.remove(tabble);
+    }
+    
+    public boolean replaceTabble(Tabble tabble){
+        if(this.tabbles.contains(tabble)){
+            if(!this.tabbles.remove(tabble)){
+                return false;
+            } else
+                return this.tabbles.add(tabble);
+        }
+        return this.tabbles.add(tabble);
+    }
+    
 }
