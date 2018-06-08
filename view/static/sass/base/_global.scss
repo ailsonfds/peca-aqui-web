@@ -1,9 +1,7 @@
-@import "base/variables";
-@import "base/global";
-@import "components/footer";
-@import "components/button";
-@import "components/cards";
-@import "components/slide";
+body {
+  font-size: 16px;
+  color: $color-text-default;
+}
 
 h1 {
   font-size: 25px;

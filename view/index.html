@@ -7,6 +7,8 @@
     <title>Peça Aqui</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="static/css/style.css">
   </head>
   <body>
@@ -14,24 +16,42 @@
     <section></section>
     <section></section>
     <section></section>
-    
-    
+
     <section class="how-work">
       <h1>Como Funciona</h1><hr>
-      <div class="slide-container">
+      <div class="owl-carousel owl-theme carousel">
         <div class="card">
-            <div class="card-img-how-work">
-
-            </div>                
+          <div class="card-cover">
+            <img src="static/img/icon-fork.png" alt="Imagem Carrosel">
+          </div>
+          <div class="card-content">
+            <h3>Otimize sua experiência</h3>
+            <p>Faça Seus Pedidos Com Facilidade</p>
+          </div>
         </div>
-        
-        <p class="text-how-work">Lorem ipsum, dolor sit</p>      
+      
+        <div class="card">
+          <div class="card-cover">
+            <img src="static/img/images.png" alt="Imagem Carrosel">
+          </div>
+          <div class="card-content">
+            <h3>Cardápio na sua Mão</h3>
+            <p>Tenha mais agilidade</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-cover">
+            <img src="static/img/icon-fork.png" alt="Imagem Carrosel">
+          </div>
+          <div class="card-content">
+            <h3>Leia o QRCode</h3>
+            <p>E tenha acesso ao cardapio do lugar</p>
+          </div>
+        </div>
       </div>
-      <div class="btn-round-container">
-        <span class="btn-round">a</span>
-        <span class="btn-round">a</span>
-        <span class="btn-round">a</span>
-      </div>
+    </div>
+      
     </section>
     
     <!-- Aqui vem a descrição dos membros da equipe
@@ -100,7 +120,32 @@
       </div>
     </footer>
     <div class="go-top"></div>
+
+    <!-- scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+                  nav:true
+              },
+              600:{
+                  items:2,
+                  nav:false
+              },
+              1000:{
+                  items:3,
+                  nav:true,
+                  loop:false
+              }
+          }
+      })
+    </script>
   </body>
 </html>
