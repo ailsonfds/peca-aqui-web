@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="static/css/style.css">
   </head>
   <body>
-    <header></header>
+    <header id="header">
+
+    </header>
     <section></section>
     <section></section>
     <section></section>
@@ -119,7 +121,8 @@
         </div>
       </div>
     </footer>
-    <div class="go-top"></div>
+
+    <div class="go-top"><i class="fa fa-angle-up"></i></div>
 
     <!-- scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -127,25 +130,46 @@
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <script>
       $('.owl-carousel').owlCarousel({
-          loop:true,
-          margin:10,
+        loop:true,
+        margin:10,
           responsiveClass:true,
           responsive:{
-              0:{
-                  items:1,
-                  nav:true
-              },
-              600:{
-                  items:2,
-                  nav:false
-              },
-              1000:{
-                  items:3,
-                  nav:true,
-                  loop:false
-              }
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:2,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop:false
+            }
           }
       })
+    </script>
+
+    <script>
+      // Script para botão de voltar ao topo
+      // Exibe o botão conforme a rolagem da tela
+      $(document).ready(function() {
+        $(window).scroll(function() {
+          if($(this).scrollTop() >= 100){
+            $('.go-top').fadeIn(300);
+          } else  {
+            $('.go-top').fadeOut(300);
+          }
+        });
+        
+        // Faz animação para subir a página
+        $('.go-top').click(function () {
+          event.preventDefault();
+          $('html, body').animate({scrollTop: 0}, 500);
+        });
+
+      });
     </script>
   </body>
 </html>

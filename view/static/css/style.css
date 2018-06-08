@@ -17,7 +17,7 @@ p {
   height: 200px;
   text-align: center; }
   .register > * {
-    margin: 20px auto; }
+    margin: 30px auto; }
 
 .how-work {
   width: 100%;
@@ -81,7 +81,7 @@ footer {
 
   .btn-form {
     width: 20%; } }
-.btn-register, .btn-to-top {
+.btn-register {
   background-color: #E51F00;
   color: #fff;
   border: none;
@@ -103,15 +103,34 @@ footer {
     box-shadow: 5px 5px 5px #ccc;
     transition: 0.5s; }
 
-.btn-to-top {
-  display: fixed; }
+.go-top {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #383838;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  vertical-align: middle;
+  cursor: auto; }
+  .go-top > * {
+    margin: auto auto; }
+  .go-top:hover {
+    box-shadow: 2px 2px 10px #383838;
+    transition-duration: 0.2s; }
 
 .card {
   width: auto;
   height: auto;
-  margin: 10px 10px;
+  margin: 10px 20px;
   border: none;
-  box-shadow: 2px 2px 10px #ccc; }
+  box-shadow: 1px 1px 1px 1px #ccc; }
 
 .card-cover {
   width: 100%;
