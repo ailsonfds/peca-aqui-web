@@ -5,6 +5,8 @@
  */
 package br.ufrn.imd.bd.pecaaqui;
 
+import java.util.List;
+
 /**
  *
  * @author Ailson F. dos Santos
@@ -19,8 +21,31 @@ public class Order {
     
     private Client client;
     
+    private List<Dish> dishes;
+    
     public Order(){
         
+    }
+
+    public Order(String code, Establishment establishment, Client client) {
+        this.code = code;
+        this.establishment = establishment;
+        this.client = client;
+    }
+
+    public Order(String code, double value, Establishment establishment, Client client) {
+        this.code = code;
+        this.value = value;
+        this.establishment = establishment;
+        this.client = client;
+    }
+
+    public Order(String code, double value, Establishment establishment, Client client, List<Dish> dishes) {
+        this.code = code;
+        this.value = value;
+        this.establishment = establishment;
+        this.client = client;
+        this.dishes = dishes;
     }
 
     public String getCode() {
@@ -54,5 +79,13 @@ public class Order {
     public void setClient(Client client) {
         this.client = client;
     }
-        
+
+    public List<Dish> getDishes() {
+        return dishes;
+    }
+
+    public void setDishes(List<Dish> dishes) {
+        this.dishes = dishes;
+    }
+    
 }

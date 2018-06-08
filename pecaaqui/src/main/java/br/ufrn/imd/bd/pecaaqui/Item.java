@@ -25,6 +25,27 @@ public class Item {
         
     }
 
+    public Item(String name, double costPrice, String category) {
+        this.name = name;
+        this.costPrice = costPrice;
+        this.category = category;
+    }
+
+    public Item(String name, int ammount, double costPrice, String category) {
+        this.name = name;
+        this.ammount = ammount;
+        this.costPrice = costPrice;
+        this.category = category;
+    }
+
+    public Item(String name, String description, int ammount, double costPrice, String category) {
+        this.name = name;
+        this.description = description;
+        this.ammount = ammount;
+        this.costPrice = costPrice;
+        this.category = category;
+    }
+
     public String getName() {
         return name;
     }

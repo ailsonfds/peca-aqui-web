@@ -26,9 +26,36 @@ public class Establishment {
     private Owner owner;
     
     private List<Order> orders;
-        
+
+    private List<Menu> menus;
+    
     public Establishment(){
         
+    }
+
+    public Establishment(String name, String phone, Long code, Owner owner) {
+        this.name = name;
+        this.phone = phone;
+        this.code = code;
+        this.owner = owner;
+    }
+
+    public Establishment(String name, String phone, Long code, Owner owner, List<Order> orders) {
+        this.name = name;
+        this.phone = phone;
+        this.code = code;
+        this.owner = owner;
+        this.orders = orders;
+    }
+
+    public Establishment(String name, String site, String description, String phone, Long code, Owner owner, List<Order> orders) {
+        this.name = name;
+        this.site = site;
+        this.description = description;
+        this.phone = phone;
+        this.code = code;
+        this.owner = owner;
+        this.orders = orders;
     }
 
     public String getName() {
@@ -86,5 +113,12 @@ public class Establishment {
     public void setOrders(List<Order> orders) {
         this.orders = orders;
     }
-    
+
+    public List<Menu> getMenus() {
+        return menus;
+    }
+
+    public void setMenus(List<Menu> menus) {
+        this.menus = menus;
+    }
 }

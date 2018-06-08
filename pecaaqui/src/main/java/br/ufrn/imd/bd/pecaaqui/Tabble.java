@@ -5,28 +5,23 @@
  */
 package br.ufrn.imd.bd.pecaaqui;
 
-import java.util.List;
-
 /**
  *
  * @author Ailson F. dos Santos
  */
-public class Owner {
+class Tabble {
     
-    private String cpf;
-    
-    private List<Establishment> establishments;
-    
-    public Owner(){
-        super();
+    private int number;
+
+    public Tabble() {
     }
 
-    public String getCpf() {
-        return cpf;
+    public int getNumber() {
+        return number;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setNumber(int number) {
+        this.number = number;
     }
     
 }
