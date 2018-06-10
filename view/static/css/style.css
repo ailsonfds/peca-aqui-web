@@ -12,6 +12,26 @@ h1 {
 p {
   font-size: 16px; }
 
+#header {
+  height: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 5px #ccc; }
+  #header .navbar {
+    background-color: #fff; }
+  #header .navbar-toggle {
+    border: 0; }
+  #header a {
+    color: #383838; }
+  #header .navbar-brand {
+    padding: 0;
+    margin: 4px 15px;
+    vertical-align: middle;
+    height: 40px;
+    width: 90px; }
+  #header .header-logo {
+    height: 40px;
+    width: 90px; }
+
 .register {
   width: 100%;
   height: 200px;
@@ -19,13 +39,42 @@ p {
   .register > * {
     margin: 30px auto; }
 
-.how-work {
+.how-work, .time {
   width: 100%;
   height: 500px;
   text-align: center; }
-  .how-work > hr {
+  .how-work hr, .time hr {
     margin-top: -5px;
     width: 60%; }
+
+.time {
+  height: 500px;
+  margin: 20px auto; }
+  .time hr {
+    margin-top: -1px;
+    margin-bottom: 5px;
+    padding: 0; }
+  .time h3 {
+    padding: 0 10px;
+    margin-bottom: 5px; }
+  .time .social-time {
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between; }
+    .time .social-time a {
+      color: #383838; }
+  @media only screen and (min-width: 768px) {
+    .time .card {
+      width: 50%; } }
+  @media only screen and (min-width: 1024px) {
+    .time .card {
+      width: 30%;
+      transition: all 1s; }
+      .time .card:hover {
+        width: 60%;
+        transform: scale(0.8);
+        transition: all 1s; } }
 
 footer {
   text-align: center;
@@ -81,8 +130,8 @@ footer {
 
   .btn-form {
     width: 20%; } }
-.btn-register {
-  background-color: #E51F00;
+.btn-register, .btn-login {
+  background-color: #F1927C;
   color: #fff;
   border: none;
   position: relative;
@@ -95,11 +144,23 @@ footer {
   margin: 30px auto;
   padding: 10px 24px;
   transition: 0.5s;
-  background-color: #E51F00; }
+  background-color: #ec6c4e;
+  box-shadow: 2px 2px 2px #ccc; }
   .btn-register:hover {
     text-decoration: none;
     color: white;
-    background-color: #b21800;
+    background-color: #ea5837;
+    box-shadow: 5px 5px 5px #ccc;
+    transition: 0.5s; }
+
+.btn-login {
+  padding: 8px 25px;
+  transition: 0.5s;
+  background-color: #F1927C; }
+  .btn-login:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #ec6c4e;
     box-shadow: 5px 5px 5px #ccc;
     transition: 0.5s; }
 
@@ -126,9 +187,10 @@ footer {
     transition-duration: 0.2s; }
 
 .card {
-  width: auto;
+  width: 90%;
   height: auto;
-  margin: 10px 20px;
+  min-height: 200px;
+  margin: 10px auto;
   border: none;
   box-shadow: 1px 1px 1px 1px #ccc; }
 

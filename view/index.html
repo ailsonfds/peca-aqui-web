@@ -9,19 +9,52 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/animate.css">
     <link rel="stylesheet" href="static/css/style.css">
   </head>
   <body>
     <header id="header">
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid ">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="true">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="static/img/logo.png" alt="Logo" class="header-logo">
+            </a>
+          </div>      
+        </div>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-bar nav-justified">
+            <li class="active"><a href="#">Inicio<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Entrar</a></li>
+          </ul>
+        </div>
+      </nav>      
     </header>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="banner">
+
+    </section>
+
+    <section class="goal">
+
+    </section>
+    
+    <section class="stats">
+
+    </section>
 
     <section class="how-work">
       <h1>Como Funciona</h1><hr>
-      <div class="owl-carousel owl-theme carousel">
+      <div class="owl-carousel owl-theme carousel" id="carousel-how-work">
         <div class="card">
           <div class="card-cover">
             <img src="static/img/icon-fork.png" alt="Imagem Carrosel">
@@ -51,14 +84,69 @@
             <p>E tenha acesso ao cardapio do lugar</p>
           </div>
         </div>
-      </div>
-    </div>
-      
+      </div>    
     </section>
-    
-    <!-- Aqui vem a descrição dos membros da equipe
-      <section></section> -->
-    
+
+    <section class="time">
+      <h1>Time</h1><hr>
+      <div class="owl-carousel owl-theme carousel" id="carousel-avaliable">
+        <div class="card">
+          <div class="card-cover">
+            <img src="static/img/person-icon.png" alt="Imagem Carrosel">
+          </div>
+          <div class="card-content">
+            <h3>Ailson Santos</h3><hr>
+            <div class="info-person">
+              <p>Desenvolvedor</p>
+              <div class="social-time">
+                <a href="#"><i class="fa fa-2x fa-github"></i></a>
+                <a href="#"><i class="fa fa-2x fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-2x fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-cover">
+            <img src="static/img/person-icon.png" alt="Imagem Carrosel">
+          </div>
+          <div class="card-content">
+            <h3>Daniel Oliveira</h3><hr>
+            <div class="info-person">
+              <p>Desenvolvedor</p>
+              <div class="social-time">
+                <a href="#"><i class="fa fa-2x fa-github"></i></a>
+                <a href="#"><i class="fa fa-2x fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-2x fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-cover">
+            <img src="static/img/person-icon.png" alt="Imagem Carrosel">
+          </div>
+          <div class="card-content">
+            <h3>Rodolpho Erick</h3><hr>
+            <div class="info-person">
+              <p>Desenvolvedor</p>
+              <div class="social-time">
+                <a href="#"><i class="fa fa-2x fa-github"></i></a>
+                <a href="#"><i class="fa fa-2x fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-2x fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="avaliable">
+
+    </section>
+
     <section class="register">
       <h1>Junte-se a nós</h1>
       <p>Faça parte da nossa iniciativa</p>
@@ -98,7 +186,6 @@
               </form>
             </div>
           </div>
-          
           <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="contact">
               <address class="contact-address"> 
@@ -108,7 +195,6 @@
               </address>
             </div>
           </div>
-
           <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="social">
               <a href="#"><i class="fa fa-2x fa-facebook-official"></i></a>
@@ -123,53 +209,10 @@
     </footer>
 
     <div class="go-top"><i class="fa fa-angle-up"></i></div>
-
     <!-- scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-    <script>
-      $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-          responsiveClass:true,
-          responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
-            600:{
-                items:2,
-                nav:false
-            },
-            1000:{
-                items:3,
-                nav:true,
-                loop:false
-            }
-          }
-      })
-    </script>
-
-    <script>
-      // Script para botão de voltar ao topo
-      // Exibe o botão conforme a rolagem da tela
-      $(document).ready(function() {
-        $(window).scroll(function() {
-          if($(this).scrollTop() >= 100){
-            $('.go-top').fadeIn(300);
-          } else  {
-            $('.go-top').fadeOut(300);
-          }
-        });
-        
-        // Faz animação para subir a página
-        $('.go-top').click(function () {
-          event.preventDefault();
-          $('html, body').animate({scrollTop: 0}, 500);
-        });
-
-      });
-    </script>
+    <script src="static/js/functions.js"></script>
   </body>
 </html>

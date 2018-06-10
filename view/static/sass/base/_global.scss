@@ -11,6 +11,37 @@ p {
   font-size: 16px;
 }
 
+#header {
+  height: 50px;  
+  text-align: center;
+  box-shadow: 2px 2px 5px #ccc; 
+
+  .navbar {
+    background-color: #fff;
+  }
+
+  .navbar-toggle {
+    border: 0;
+  }
+
+  a {
+    color: $color-text-default;  
+  }
+
+  .navbar-brand {
+    padding: 0;
+    margin: 4px 15px;
+    vertical-align: middle;
+    height: 40px;
+    width: 90px;
+  }
+
+  .header-logo {
+    height: 40px;
+    width: 90px;
+  }
+}
+
 .register {
   width: 100%;
   height: 200px;
@@ -20,13 +51,62 @@ p {
   }
 }
 
-.how-work {
+%carousel {
   width: 100%;
   height: 500px;
   text-align: center;
-  > hr {
+
+  hr {
     margin-top: -5px;
     width: 60%;
-
   }  
+}
+
+.how-work, .time {
+  @extend %carousel;
+}
+
+.time {
+  height: 500px;
+  margin: 20px auto;
+
+  hr{
+    margin-top: -1px;
+    margin-bottom: 5px;
+    padding: 0;
+  } 
+
+  h3 {
+    padding: 0 10px;
+    margin-bottom: 5px;
+  }
+
+  .social-time {
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    
+    a {
+      color: $color-text-default;
+    }    
+  }
+
+  @media only screen and (min-width: 768px) {
+    .card {
+      width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .card {
+      width: 30%;
+      transition: all 1s;
+      &:hover {
+        width: 60%;
+        transform: scale(0.8);
+        transition: all 1s;
+      }
+    }
+  }
 }
