@@ -27,3 +27,34 @@
     padding: 20px 0;
   }
 }
+
+.card-time {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: arial;
+  float: left;
+
+  .card-time-title {
+    color: $color-text-default;
+    font-size: 18px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .social-time {
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    
+    a {
+      color: $color-text-default;
+      text-decoration: none;
+      font-size: 22px;
+    }
+  }
+}

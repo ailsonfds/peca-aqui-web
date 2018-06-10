@@ -59,3 +59,8 @@ $(document).ready(function() {
   });
 
 });
+
+function showSocial() {
+  document.getElementById('cover-person').classList.toggle("social-cover");
+  document.getElementById('social-time').classList.toggle("social-show");
+}
