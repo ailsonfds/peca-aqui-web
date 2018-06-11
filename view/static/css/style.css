@@ -12,20 +12,93 @@ h1 {
 p {
   font-size: 16px; }
 
+#header {
+  height: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 5px #ccc; }
+  #header .navbar {
+    background-color: #fff; }
+  #header .navbar-toggle {
+    border: 0; }
+  #header a {
+    color: #383838; }
+  #header .navbar-brand {
+    padding: 0;
+    margin: 4px 15px;
+    vertical-align: middle;
+    height: 40px;
+    width: 90px; }
+  #header .header-logo {
+    height: 40px;
+    width: 90px; }
+
 .register {
   width: 100%;
   height: 200px;
   text-align: center; }
   .register > * {
-    margin: 20px auto; }
+    margin: 30px auto; }
 
-.how-work {
+.how-work, .time {
   width: 100%;
-  height: 500px;
   text-align: center; }
-  .how-work > hr {
+  .how-work hr, .time hr {
     margin-top: -5px;
     width: 60%; }
+
+.how-work {
+  height: 500px; }
+
+.time {
+  min-height: 500px;
+  margin: 20px auto;
+  width: 80%;
+  display: flex; }
+  .time hr {
+    margin-top: -1px;
+    margin-bottom: 5px;
+    padding: 0; }
+  .time h3 {
+    padding: 0 10px;
+    margin-bottom: 5px; }
+  @media only screen and (min-width: 768px) {
+    .time .card {
+      width: 50%; } }
+  @media only screen and (min-width: 1024px) {
+    .time .time {
+      width: 100%;
+      margin: 10px auto; }
+    .time .card-time {
+      transition: all 1s;
+      width: 100%;
+      margin: 25px 1em;
+      position: relative;
+      transition: all 1s; }
+      .time .card-time .social-time {
+        position: absolute;
+        margin: 0;
+        top: 30%;
+        left: 30%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.5s, opacity 0.5s linear; }
+      .time .card-time .cover-person {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background-color: #f3a593;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 1s, opacity 0.5s linear; }
+      .time .card-time:hover .social-time {
+        visibility: visible;
+        opacity: 1; }
+      .time .card-time:hover .cover-person {
+        visibility: visible;
+        opacity: 1; } }
 
 footer {
   text-align: center;
@@ -81,8 +154,8 @@ footer {
 
   .btn-form {
     width: 20%; } }
-.btn-register, .btn-to-top {
-  background-color: #E51F00;
+.btn-register, .btn-login {
+  background-color: #F1927C;
   color: #fff;
   border: none;
   position: relative;
@@ -95,23 +168,55 @@ footer {
   margin: 30px auto;
   padding: 10px 24px;
   transition: 0.5s;
-  background-color: #E51F00; }
+  background-color: #ec6c4e;
+  box-shadow: 2px 2px 2px #ccc; }
   .btn-register:hover {
     text-decoration: none;
     color: white;
-    background-color: #b21800;
+    background-color: #ea5837;
     box-shadow: 5px 5px 5px #ccc;
     transition: 0.5s; }
 
-.btn-to-top {
-  display: fixed; }
+.btn-login {
+  padding: 8px 25px;
+  transition: 0.5s;
+  background-color: #F1927C; }
+  .btn-login:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #ec6c4e;
+    box-shadow: 5px 5px 5px #ccc;
+    transition: 0.5s; }
+
+.go-top {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #383838;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  vertical-align: middle;
+  cursor: auto; }
+  .go-top > * {
+    margin: auto auto; }
+  .go-top:hover {
+    box-shadow: 2px 2px 10px #383838;
+    transition-duration: 0.2s; }
 
 .card {
-  width: auto;
+  width: 90%;
   height: auto;
-  margin: 10px 10px;
+  min-height: 200px;
+  margin: 10px auto;
   border: none;
-  box-shadow: 2px 2px 10px #ccc; }
+  box-shadow: 1px 1px 1px 1px #ccc; }
 
 .card-cover {
   width: 100%;
@@ -127,5 +232,27 @@ footer {
   height: 40%; }
   .card-content > * {
     padding: 20px 0; }
+
+.card-time {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: arial;
+  float: left; }
+  .card-time .card-time-title {
+    color: #383838;
+    font-size: 18px; }
+  .card-time img {
+    width: 100%; }
+  .card-time .social-time {
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between; }
+    .card-time .social-time a {
+      color: #383838;
+      text-decoration: none;
+      font-size: 22px; }
 
 /*# sourceMappingURL=style.css.map */

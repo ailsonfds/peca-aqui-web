@@ -9,17 +9,52 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/animate.css">
     <link rel="stylesheet" href="static/css/style.css">
   </head>
   <body>
-    <header></header>
-    <section></section>
-    <section></section>
-    <section></section>
+    <header id="header">
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid ">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="true">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="static/img/logo.png" alt="Logo" class="header-logo">
+            </a>
+          </div>      
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-bar nav-justified">
+            <li class="active"><a href="#">Inicio<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Entrar</a></li>
+          </ul>
+        </div>
+      </nav>      
+    </header>
+    <section class="banner">
+
+    </section>
+
+    <section class="goal">
+
+    </section>
+    
+    <section class="stats">
+
+    </section>
 
     <section class="how-work">
       <h1>Como Funciona</h1><hr>
-      <div class="owl-carousel owl-theme carousel">
+      <div class="owl-carousel owl-theme carousel" id="carousel-how-work">
         <div class="card">
           <div class="card-cover">
             <img src="static/img/icon-fork.png" alt="Imagem Carrosel">
@@ -49,14 +84,58 @@
             <p>E tenha acesso ao cardapio do lugar</p>
           </div>
         </div>
-      </div>
-    </div>
-      
+      </div>    
     </section>
-    
-    <!-- Aqui vem a descrição dos membros da equipe
-      <section></section> -->
-    
+
+    <section class="time">
+      <div class="container-fluid">
+        <h1>Time</h1><hr>
+        <div class="card-time">
+          <img src="static/img/team2.jpg" alt="Ailson">
+          <h1>Ailson Santos</h1>
+          <p class="card-time-title">Desenvolvedor</p>
+          <p>IMD - UFRN</p>
+          <div class="cover-person"></div>
+          <div class="social-time">
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>
+        </div>
+  
+        <div class="card-time"> 
+          <img src="static/img/team2.jpg" alt="Daniel">
+          <h1>Daniel Oliveira</h1>
+          <p class="card-time-title">CEO & Co-Founder</p>
+          <p>IMD - UFRN</p>
+          <div class="cover-person"></div>
+          <div class="social-time">
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>
+        </div>
+  
+        <div class="card-time">
+          <img src="static/img/team2.jpg" alt="Rodolpho">
+          <h1>Rodolpho Erick</h1>
+          <p class="card-time-title">Desenvolvedor</p>
+          <p>IMD - UFRN</p>
+          <div class="cover-person" id="cover-person"></div>
+          <div class="social-time" id="social-time">
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>
+        </div>
+        
+      </div> 
+    </section>
+
+    <section class="avaliable">
+
+    </section>
+
     <section class="register">
       <h1>Junte-se a nós</h1>
       <p>Faça parte da nossa iniciativa</p>
@@ -96,7 +175,6 @@
               </form>
             </div>
           </div>
-          
           <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="contact">
               <address class="contact-address"> 
@@ -106,7 +184,6 @@
               </address>
             </div>
           </div>
-
           <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="social">
               <a href="#"><i class="fa fa-2x fa-facebook-official"></i></a>
@@ -119,33 +196,12 @@
         </div>
       </div>
     </footer>
-    <div class="go-top"></div>
 
+    <div class="go-top"><i class="fa fa-angle-up"></i></div>
     <!-- scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-    <script>
-      $('.owl-carousel').owlCarousel({
-          loop:true,
-          margin:10,
-          responsiveClass:true,
-          responsive:{
-              0:{
-                  items:1,
-                  nav:true
-              },
-              600:{
-                  items:2,
-                  nav:false
-              },
-              1000:{
-                  items:3,
-                  nav:true,
-                  loop:false
-              }
-          }
-      })
-    </script>
+    <script src="static/js/functions.js"></script>
   </body>
 </html>
