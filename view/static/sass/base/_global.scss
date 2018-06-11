@@ -11,22 +11,138 @@ p {
   font-size: 16px;
 }
 
+#header {
+  height: 50px;  
+  text-align: center;
+  box-shadow: 2px 2px 5px #ccc; 
+
+  .navbar {
+    background-color: #fff;
+  }
+
+  .navbar-toggle {
+    border: 0;
+  }
+
+  a {
+    color: $color-text-default;  
+  }
+
+  .navbar-brand {
+    padding: 0;
+    margin: 4px 15px;
+    vertical-align: middle;
+    height: 40px;
+    width: 90px;
+  }
+
+  .header-logo {
+    height: 40px;
+    width: 90px;
+  }
+}
+
 .register {
   width: 100%;
   height: 200px;
   text-align: center;
   > * {
-    margin: 20px auto;
+    margin: 30px auto;
   }
 }
 
-.how-work {
+%carousel {
   width: 100%;
-  height: 500px;
   text-align: center;
-  > hr {
+
+  hr {
     margin-top: -5px;
     width: 60%;
-
   }  
+}
+
+.how-work, .time {
+  @extend %carousel;
+}
+
+.how-work {
+  height: 500px;
+}
+
+.time {
+  min-height: 500px;
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  // justify-content: baseline;
+  hr{
+    margin-top: -1px;
+    margin-bottom: 5px;
+    padding: 0;
+  } 
+
+  h3 {
+    padding: 0 10px;
+    margin-bottom: 5px;
+  }
+
+ 
+
+  @media only screen and (min-width: 768px) {
+    .card {
+      width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .time {
+      width: 100%;
+      margin: 10px auto;
+      
+    }
+
+    .card-time {
+      transition: all 1s; 
+      width: 100%;
+      margin: 25px 1em;
+      position: relative;
+      transition: all 1s;
+
+      .social-time {
+        position: absolute;        
+        margin: 0;
+        top: 30%;
+        left: 30%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.5s, opacity 0.5s linear;
+      }
+
+      .cover-person {
+        position: absolute;        
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background-color: lighten($color: $color-btn-home, $amount: 5%) ;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 1s, opacity 0.5s linear;
+      } 
+
+      &:hover {
+        
+        .social-time{
+          visibility: visible;
+          opacity: 1;
+        }
+
+        .cover-person{
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
