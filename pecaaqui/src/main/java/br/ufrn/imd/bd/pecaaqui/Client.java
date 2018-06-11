@@ -21,6 +21,17 @@ public class Client extends User{
         super();
     }
 
+    public Client(int level) {
+        super();
+        this.level = level;
+    }
+
+    public Client(int level, List<Order> orders) {
+        super();
+        this.level = level;
+        this.orders = orders;
+    }
+    
     public int getLevel() {
         return level;
     }
@@ -35,6 +46,24 @@ public class Client extends User{
 
     public void setOrders(List<Order> orders) {
         this.orders = orders;
+    }
+    
+    public boolean addOrder(Order order){
+        return this.orders.add(order);
+    }
+    
+    public boolean removeOrder(Order order){
+        return this.orders.remove(order);
+    }
+    
+    public boolean replaceDish(Order order){
+        if(this.orders.contains(order)){
+            if(!this.orders.remove(order)){
+                return false;
+            } else
+                return this.orders.add(order);
+        }
+        return this.orders.add(order);
     }
     
 }
